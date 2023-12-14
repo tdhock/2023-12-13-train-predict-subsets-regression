@@ -1,0 +1,1493 @@
+{
+ "geoms": {
+ "geom1_point_pred": {
+ "geom": "point",
+"classed": "geom1_point_pred",
+"aes": {
+ "x": "x",
+"y": "y",
+"fill": "set.name",
+"showSelectedlegendfill": "set.name",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"shape":       21,
+"showSelected": "iteration" 
+},
+"types": {
+ "fill": "rgb",
+"y": "numeric",
+"x": "numeric",
+"showSelectedlegendfill": "character",
+"showSelected1": "integer",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [
+ "iteration" 
+],
+"nest_order": [
+ "showSelectedlegendfill",
+"PANEL" 
+],
+"subset_order": [
+ "showSelectedlegendfill",
+"PANEL" 
+],
+"columns": {
+ "common": [
+ "y",
+"x",
+"PANEL",
+"group" 
+] 
+},
+"chunks": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6,
+"7": 7,
+"8": 8,
+"9": 9,
+"10": 10,
+"11": 11,
+"12": 12,
+"13": 13,
+"14": 14,
+"15": 15,
+"16": 16,
+"17": 17,
+"18": 18 
+},
+"total": 18 
+},
+"geom2_line_pred": {
+ "geom": "line",
+"classed": "geom2_line_pred",
+"aes": {
+ "x": "x",
+"y": "y",
+"colour": "algorithm",
+"group": "paste(algorithm, iteration)",
+"showSelectedlegendcolour": "algorithm",
+"showSelected1": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": "iteration" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"showSelectedlegendcolour": "character",
+"showSelected1": "integer",
+"PANEL": "factor" 
+},
+"chunk_order": [
+ "iteration" 
+],
+"nest_order": [
+ "showSelectedlegendcolour",
+"PANEL",
+"group" 
+],
+"subset_order": [
+ "showSelectedlegendcolour",
+"PANEL" 
+],
+"columns": {
+ "common": [
+ "colour",
+"group",
+"showSelectedlegendcolour" 
+] 
+},
+"chunks": {
+ "1": 1,
+"10": 2,
+"11": 3,
+"12": 4,
+"13": 5,
+"14": 6,
+"15": 7,
+"16": 8,
+"17": 9,
+"18": 10,
+"2": 11,
+"3": 12,
+"4": 13,
+"5": 14,
+"6": 15,
+"7": 16,
+"8": 17,
+"9": 18 
+},
+"total": 18 
+},
+"geom3_rect_diagram": {
+ "geom": "rect",
+"classed": "geom3_rect_diagram",
+"aes": {
+ "xmin": "-Inf",
+"xmax": "Inf",
+"colour": "rows",
+"size": "rows",
+"ymin": "display_row",
+"ymax": "display_end",
+"showSelectedlegendsizecolour": "rows" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent" 
+},
+"types": {
+ "size": "numeric",
+"colour": "rgb",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric",
+"showSelectedlegendsizecolour": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelectedlegendsizecolour",
+"PANEL" 
+],
+"subset_order": [
+ "showSelectedlegendsizecolour",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_rect_diagram": {
+ "geom": "rect",
+"classed": "geom4_rect_diagram",
+"aes": {
+ "xmin": "iteration - rect.expand",
+"ymin": "display_row",
+"xmax": "iteration + rect.expand",
+"ymax": "display_end",
+"fill": "set.name",
+"showSelectedlegendfill": "set.name",
+"clickSelects": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"clickSelects": "iteration" 
+},
+"types": {
+ "fill": "rgb",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric",
+"showSelectedlegendfill": "character",
+"clickSelects": "integer",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelectedlegendfill",
+"PANEL" 
+],
+"subset_order": [
+ "showSelectedlegendfill",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_text_diagram": {
+ "geom": "text",
+"classed": "geom5_text_diagram",
+"aes": {
+ "x": "ifelse(rows == \"group\", Inf, -Inf)",
+"y": "(display_row + display_end)/2",
+"hjust": "ifelse(rows == \"group\", 1, 0)",
+"label": "paste0(rows, \"=\", ifelse(rows == \"group\", group, fold))" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"PANEL": "factor",
+"group": "character",
+"anchor": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_point_err": {
+ "geom": "point",
+"classed": "geom6_point_err",
+"aes": {
+ "x": "train.groups",
+"y": "regr.mse",
+"fill": "algorithm",
+"showSelectedlegendfill": "algorithm",
+"clickSelects": "iteration" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"shape":        1,
+"size":        5,
+"stroke":        2,
+"colour": "#000000",
+"colour_off": "transparent",
+"clickSelects": "iteration" 
+},
+"types": {
+ "fill": "rgb",
+"y": "numeric",
+"x": "integer",
+"showSelectedlegendfill": "character",
+"clickSelects": "integer",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelectedlegendfill",
+"PANEL" 
+],
+"subset_order": [
+ "showSelectedlegendfill",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "set.name": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "test", "train", "unused" ],
+"levels": [ "test", "train", "unused" ],
+"update": [
+ "geom1_point_pred",
+"geom4_rect_diagram" 
+] 
+},
+"algorithm": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "featureless", "rpart" ],
+"levels": [ "featureless", "rpart" ],
+"update": [
+ "geom2_line_pred",
+"geom6_point_err" 
+] 
+},
+"rows": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "group", "fold" ],
+"levels": [ "group", "fold" ],
+"update": [
+ "geom3_rect_diagram" 
+] 
+},
+"iteration": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"chunks": "iteration",
+"clickSelects": true,
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18" ],
+"update": [
+ "geom1_point_pred",
+"geom2_line_pred",
+"geom4_rect_diagram",
+"geom6_point_err" 
+] 
+} 
+},
+"plots": {
+ "pred": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "set.name": {
+ "guide": "legend",
+"geoms": "point",
+"title": "set.name",
+"class": "set.name",
+"selector": "set.name",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointfill": "#D95F02",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "test" 
+},
+{
+ "pointfill": "#1B9E77",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "train" 
+},
+{
+ "pointfill": "#FFFFFF",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "unused" 
+} 
+] 
+},
+"algorithm": {
+ "guide": "legend",
+"geoms": "path",
+"title": "algorithm",
+"class": "algorithm",
+"selector": "algorithm",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathcolour": "#0000FF",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "featureless" 
+},
+{
+ "pathcolour": "#FF0000",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "rpart" 
+} 
+] 
+} 
+},
+"strips": {
+ "right": [
+ "",
+"task_id: easy",
+"",
+"task_id: impossible" 
+],
+"top": [
+ "person/group: 1",
+"person/group: 2",
+"",
+"" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2", "3", "4" ],
+"ROW": [ 1, 1, 2, 2 ],
+"COL": [ 1, 2, 1, 2 ],
+"task_id": [ "easy", "easy", "impossible", "impossible" ],
+"person/group": [ 1, 2, 1, 2 ],
+"SCALE_X": [ 1, 2, 1, 2 ],
+"SCALE_Y": [ 1, 1, 2, 2 ],
+"AXIS_Y": [ true, false, true, false ],
+"AXIS_X": [ false, false, true, true ],
+"coord_fixed": [ false, false, false, false ],
+"width_proportion": [      0.5,      0.5,      0.5,      0.5 ],
+"height_proportion": [ 0.2882505, 0.2882505, 0.7117495, 0.7117495 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+[
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+[
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+[
+       -2,
+      -1,
+       0,
+       1,
+       2 
+] 
+],
+"y": [
+ [
+       -2,
+       0,
+       2,
+       4 
+],
+[
+       -2,
+       0,
+       2,
+       4 
+],
+[
+       -8,
+      -6,
+      -4,
+      -2,
+       0,
+       2,
+       4,
+       6,
+       8,
+      10 
+],
+[
+       -8,
+      -6,
+      -4,
+      -2,
+       0,
+       2,
+       4,
+       6,
+       8,
+      10 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -2,
+    -1.5,
+      -1,
+    -0.5,
+       0,
+     0.5,
+       1,
+     1.5,
+       2 
+],
+[
+       -2,
+    -1.5,
+      -1,
+    -0.5,
+       0,
+     0.5,
+       1,
+     1.5,
+       2 
+],
+[
+       -2,
+    -1.5,
+      -1,
+    -0.5,
+       0,
+     0.5,
+       1,
+     1.5,
+       2 
+],
+[
+       -2,
+    -1.5,
+      -1,
+    -0.5,
+       0,
+     0.5,
+       1,
+     1.5,
+       2 
+] 
+],
+"y": [
+ [
+       -2,
+      -1,
+       0,
+       1,
+       2,
+       3,
+       4,
+       5 
+],
+[
+       -2,
+      -1,
+       0,
+       1,
+       2,
+       3,
+       4,
+       5 
+],
+[
+       -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10,
+      11 
+],
+[
+       -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10,
+      11 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+"xlab": [
+ "-2",
+"-1",
+"0",
+"1",
+"2" 
+],
+"xrange": [     -2.2,      2.2 ],
+"xline": true,
+"xticks": true,
+"y": [
+       -2,
+       0,
+       2,
+       4 
+],
+"ylab": [
+ "-2",
+"0",
+"2",
+"4" 
+],
+"yrange": [ -2.871946, 5.722116 ],
+"yline": true,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+"xlab": [
+ "-2",
+"-1",
+"0",
+"1",
+"2" 
+],
+"xrange": [     -2.2,      2.2 ],
+"xline": true,
+"xticks": true,
+"y": [
+       -2,
+       0,
+       2,
+       4 
+],
+"ylab": [
+ "-2",
+"0",
+"2",
+"4" 
+],
+"yrange": [ -2.871946, 5.722116 ],
+"yline": true,
+"yticks": true 
+},
+"axis3": {
+ "x": [
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+"xlab": [
+ "-2",
+"-1",
+"0",
+"1",
+"2" 
+],
+"xrange": [     -2.2,      2.2 ],
+"xline": true,
+"xticks": true,
+"y": [
+       -8,
+      -6,
+      -4,
+      -2,
+       0,
+       2,
+       4,
+       6,
+       8,
+      10 
+],
+"ylab": [
+ "-8",
+"-6",
+"-4",
+"-2",
+"0",
+"2",
+"4",
+"6",
+"8",
+"10" 
+],
+"yrange": [ -9.220533, 11.99997 ],
+"yline": true,
+"yticks": true 
+},
+"axis4": {
+ "x": [
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+"xlab": [
+ "-2",
+"-1",
+"0",
+"1",
+"2" 
+],
+"xrange": [     -2.2,      2.2 ],
+"xline": true,
+"xticks": true,
+"y": [
+       -8,
+      -6,
+      -4,
+      -2,
+       0,
+       2,
+       4,
+       6,
+       8,
+      10 
+],
+"ylab": [
+ "-8",
+"-6",
+"-4",
+"-2",
+"0",
+"2",
+"4",
+"6",
+"8",
+"10" 
+],
+"yrange": [ -9.220533, 11.99997 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "x",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "y",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-2",
+"-1",
+"0",
+"1",
+"2" 
+],
+"ylabs": [
+ "-2",
+"0",
+"2",
+"4",
+"-8",
+"-6",
+"-4",
+"6",
+"8",
+"10" 
+],
+"title": "Predictions for selected train/test split",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom1_point_pred",
+"geom2_line_pred" 
+] 
+},
+"diagram": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "set.name": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "set.name",
+"class": "set.name",
+"selector": "set.name",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygonfill": "#D95F02",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "test" 
+},
+{
+ "polygonfill": "#1B9E77",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "train" 
+} 
+] 
+},
+"rows": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "rows",
+"class": "rows",
+"selector": "rows",
+"is_discrete": true,
+"legend_type": [ "size", "colour" ],
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygoncolour": "#7F7F7F",
+"polygonsize":        1,
+"polygonlinetype":        1,
+"label": "fold" 
+},
+{
+ "polygoncolour": "#FFA500",
+"polygonsize":        3,
+"polygonlinetype":        1,
+"label": "group" 
+} 
+] 
+} 
+},
+"strips": {
+ "right": [
+ "",
+"",
+"" 
+],
+"top": [
+ "all",
+"other",
+"same" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2", "3" ],
+"ROW": [ 1, 1, 1 ],
+"COL": [ 1, 2, 3 ],
+"train.groups": [ "all", "other", "same" ],
+"SCALE_X": [ 1, 2, 3 ],
+"SCALE_Y": [ 1, 1, 1 ],
+"AXIS_Y": [ true, false, false ],
+"AXIS_X": [ true, true, true ],
+"coord_fixed": [ false, false, false ],
+"width_proportion": [ 0.3333333, 0.3333333, 0.3333333 ],
+"height_proportion": [        1,        1,        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        2,
+       4,
+       6 
+],
+[
+        8,
+      10,
+      12 
+],
+[
+       14,
+      16,
+      18 
+] 
+],
+"y": [
+ [
+        0,
+     100,
+     200,
+     300 
+],
+[
+        0,
+     100,
+     200,
+     300 
+],
+[
+        0,
+     100,
+     200,
+     300 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        1,
+       2,
+       3,
+       4,
+       5,
+       6 
+],
+[
+        7,
+       8,
+       9,
+      10,
+      11,
+      12 
+],
+[
+       13,
+      14,
+      15,
+      16,
+      17,
+      18 
+] 
+],
+"y": [
+ [
+        0,
+      50,
+     100,
+     150,
+     200,
+     250,
+     300 
+],
+[
+        0,
+      50,
+     100,
+     150,
+     200,
+     250,
+     300 
+],
+[
+        0,
+      50,
+     100,
+     150,
+     200,
+     250,
+     300 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        2,
+       4,
+       6 
+],
+"xlab": [
+ "2",
+"4",
+"6" 
+],
+"xrange": [     0.53,     6.47 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+     100,
+     200,
+     300 
+],
+"ylab": [
+ "0",
+"100",
+"200",
+"300" 
+],
+"yrange": [   -13.95,   314.95 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+        8,
+      10,
+      12 
+],
+"xlab": [
+ "8",
+"10",
+"12" 
+],
+"xrange": [     6.53,    12.47 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+     100,
+     200,
+     300 
+],
+"ylab": [
+ "0",
+"100",
+"200",
+"300" 
+],
+"yrange": [   -13.95,   314.95 ],
+"yline": false,
+"yticks": true 
+},
+"axis3": {
+ "x": [
+       14,
+      16,
+      18 
+],
+"xlab": [
+ "14",
+"16",
+"18" 
+],
+"xrange": [    12.53,    18.47 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+     100,
+     200,
+     300 
+],
+"ylab": [
+ "0",
+"100",
+"200",
+"300" 
+],
+"yrange": [   -13.95,   314.95 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Split number / cross-validation iteration",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Row number (data sorted by group, fold)",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "2",
+"4",
+"6",
+"8",
+"10",
+"12",
+"14",
+"16",
+"18" 
+],
+"ylabs": [
+ "0",
+"100",
+"200",
+"300" 
+],
+"title": "Select train/test split",
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom3_rect_diagram",
+"geom4_rect_diagram",
+"geom5_text_diagram" 
+] 
+},
+"err": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "algorithm": {
+ "guide": "legend",
+"geoms": "point",
+"title": "algorithm",
+"class": "algorithm",
+"selector": "algorithm",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointfill": "#0000FF",
+"pointshape":        1,
+"pointcolour": "#000000",
+"pointsize":        5,
+"pointstroke":        2,
+"label": "featureless" 
+},
+{
+ "pointfill": "#FF0000",
+"pointshape":        1,
+"pointcolour": "#000000",
+"pointsize":        5,
+"pointstroke":        2,
+"label": "rpart" 
+} 
+] 
+} 
+},
+"strips": {
+ "right": [
+ "",
+"task_id: easy",
+"",
+"task_id: impossible" 
+],
+"top": [
+ "person/group: 1",
+"person/group: 2",
+"",
+"" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2", "3", "4" ],
+"ROW": [ 1, 1, 2, 2 ],
+"COL": [ 1, 2, 1, 2 ],
+"task_id": [ "easy", "easy", "impossible", "impossible" ],
+"person/group": [ 1, 2, 1, 2 ],
+"SCALE_X": [ 1, 2, 1, 2 ],
+"SCALE_Y": [ 1, 1, 2, 2 ],
+"AXIS_Y": [ true, false, true, false ],
+"AXIS_X": [ false, false, true, true ],
+"coord_fixed": [ false, false, false, false ],
+"width_proportion": [      0.5,      0.5,      0.5,      0.5 ],
+"height_proportion": [      0.5,      0.5,      0.5,      0.5 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+ 1,
+2,
+3 
+],
+[
+ 1,
+2,
+3 
+],
+[
+ 1,
+2,
+3 
+],
+[
+ 1,
+2,
+3 
+] 
+],
+"y": [
+ [
+        0,
+ 0.30103,
+0.4771213 
+],
+[
+        0,
+ 0.30103,
+0.4771213 
+],
+[
+        0,
+       1,
+       2 
+],
+[
+        0,
+       1,
+       2 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [],
+[],
+[],
+[] 
+],
+"y": [
+ [
+        0,
+0.150515,
+ 0.30103,
+0.3890756,
+0.4771213 
+],
+[
+        0,
+0.150515,
+ 0.30103,
+0.3890756,
+0.4771213 
+],
+[
+        0,
+     0.5,
+       1,
+     1.5,
+       2 
+],
+[
+        0,
+     0.5,
+       1,
+     1.5,
+       2 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+ 1,
+2,
+3 
+],
+"xlab": [
+ "all",
+"other",
+"same" 
+],
+"xrange": [      0.4,      3.6 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+ 0.30103,
+0.4771213 
+],
+"ylab": [
+ "1",
+"2",
+"3" 
+],
+"yrange": [ -0.05809505, 0.5056345 ],
+"yline": true,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+ 1,
+2,
+3 
+],
+"xlab": [
+ "all",
+"other",
+"same" 
+],
+"xrange": [      0.4,      3.6 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+ 0.30103,
+0.4771213 
+],
+"ylab": [
+ "1",
+"2",
+"3" 
+],
+"yrange": [ -0.05809505, 0.5056345 ],
+"yline": true,
+"yticks": true 
+},
+"axis3": {
+ "x": [
+ 1,
+2,
+3 
+],
+"xlab": [
+ "all",
+"other",
+"same" 
+],
+"xrange": [      0.4,      3.6 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+       1,
+       2 
+],
+"ylab": [
+ "1",
+"10",
+"100" 
+],
+"yrange": [ -0.2074051, 2.285487 ],
+"yline": true,
+"yticks": true 
+},
+"axis4": {
+ "x": [
+ 1,
+2,
+3 
+],
+"xlab": [
+ "all",
+"other",
+"same" 
+],
+"xrange": [      0.4,      3.6 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+       1,
+       2 
+],
+"ylab": [
+ "1",
+"10",
+"100" 
+],
+"yrange": [ -0.2074051, 2.285487 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "People/groups in train set",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Mean squared error on test set",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "all",
+"other",
+"same" 
+],
+"ylabs": [
+ "1",
+"2",
+"3",
+"10",
+"100" 
+],
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom6_point_err" 
+] 
+} 
+},
+"title": "Train/predict on subsets, regression",
+"source": "https://github.com/tdhock/mlr3resampling/blob/d7cbe06fdb562ff8c1c8b4ad0bc055b65bd7b2c6/vignettes/Simulations.Rmd" 
+}
